@@ -3,3 +3,126 @@ button:focus {
     outline: none !important;
     box-shadow: none !important;
 }
+
+
+
+.hero-carousel .carousel-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+ 
+    
+}
+
+
+.hero-carousel .banner-img {
+    position: relative;
+    z-index: 0;
+}
+
+
+.hero-carousel .banner-caption {
+    position: absolute;
+    top: 60%; 
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 1; 
+    color: #ffffff; 
+    text-align: left;
+}
+
+
+.hero-carousel .banner-caption h2 {
+    font-size: 2rem; 
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+.hero-carousel .banner-caption p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+
+.hero-carousel .btn-save {
+    background-color: #cbb094; 
+    color: #3e3e3e;
+    border: none;
+    padding: 10px 60px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-carousel .btn-save:hover {
+    background-color: #b69a7d; 
+    color: #fff;
+}
+
+
+
+
+
+@media (max-width: 991px) {
+    .hero-carousel .banner-caption h2 {
+        font-size: 2rem; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero-carousel .banner-caption {
+        text-align: center; 
+    }
+
+    .hero-carousel .banner-caption h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .hero-carousel .banner-caption p {
+        font-size: 0.9rem; 
+        margin-bottom: 15px;
+       
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .hero-carousel .btn-save {
+        padding: 8px 16px; 
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (max-width: 576px) {
+   
+    .hero-carousel .banner-caption {
+        top: 45%; 
+    }
+
+    .hero-carousel .banner-caption h2 {
+        font-size: 1.2rem; 
+        font-weight: 700;  
+    }
+
+    .hero-carousel .banner-caption p {
+        font-size: 0.8rem;
+        display: none; 
+    }
+
+    .hero-carousel .btn-save {
+        font-size: 0.75rem;
+        padding: 6px 12px;
+    }
+}

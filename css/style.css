@@ -176,60 +176,7 @@
 .icon-item img:hover {
     transform: scale(1.1); 
 }
-/* banner */
-.hero-banner {
-    background-image: url('../image/AnhGiaoDienChinh.png'); 
-    background-size: cover;   
-    background-position: center; 
-    background-repeat: no-repeat;
-    position: relative;
-    
-    width: 100%;    
-    height: 600px;  
-    
-   
-    display: flex;
-    
-    padding-left: 80px;  
-}
 
-
-.banner-content {
-    color: white; 
-    max-width: 600px;
-    position: absolute;
-    bottom: 15%;
-}
-
-.banner-content h2 {
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.banner-content p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 30px;
-}
-
-
-.btn-save {
-    background-color: #D6C6B6; 
-    color: #32462F; 
-    border: none;
-    padding: 15px 80px;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.btn-save:hover {
-    background-color: white; /* Di chuột vào đổi màu */
-    color: black;
-}
-/* end banner */
 
 /* section3 */
 .section3 {
@@ -438,36 +385,36 @@
 }
 
 .btn-register:hover {
-    background-color: #f0f0f0; /* Màu xám nhẹ khi hover */
+    background-color: #f0f0f0; 
 }
 
 /* --- Style cho ảnh bên phải --- */
 .inner-image img {
-    width: 100%; /* Ảnh to full cột */
+    width: 100%; 
     height: auto;
     object-fit: cover;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Đổ bóng cho ảnh nổi lên */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
 }
 
 /* Chỉ chỉnh sửa cho Mobile nếu cần thiết */
 @media (max-width: 768px) {
     .section5 {
-        padding: 40px 0; /* Giảm padding cho đỡ tốn diện tích trên điện thoại */
+        padding: 40px 0; 
     }
     
     .section5 .title {
-        font-size: 20px; /* Chữ tiêu đề bé lại xíu cho vừa màn hình */
+        font-size: 20px; 
     }
     
     .listMember li {
-        justify-content: flex-start; /* Đảm bảo icon và chữ luôn bắt đầu từ trái */
+        justify-content: flex-start; 
     }
 }
 
 /* end section5 */
 
 /* section6 */
-/* Reset cơ bản để tránh lề mặc định của trình duyệt */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -554,7 +501,7 @@
     border-color: #333;
 }
 
-/* RESPONSIVE: Giao diện trên điện thoại */
+
 @media (max-width: 768px) {
     .section6 {
         margin-top: 40px;
@@ -562,8 +509,8 @@
     }
     
     .section6 .btn-see-more {
-        padding: 10px 40px; /* Nút nhỏ lại xíu trên mobile */
-        width: 100%; /* Hoặc để nút full chiều rộng nếu thích */
+        padding: 10px 40px; 
+        width: 100%;
     }
 }
 /* end section6 */
