@@ -1,0 +1,154 @@
+.Section1Map{
+    margin: 100px 50px;
+
+}
+
+.Section1Map h1{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.Section1Map p{
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+
+.ButtonTimNgay{
+    display: flex;
+    justify-content: center;
+}
+
+.ButtonTimNgay button{
+    background-color: #BD3D44;
+    padding: 15px 100px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+.ButtonTimNgay button:hover{
+    background-color: #7c292d;
+
+}
+
+.Map{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.Map iframe{
+    width: 80%;
+    height: 600px;
+}
+
+
+/* --- RESPONSIVE CHO MAP PAGE --- */
+
+/* 1. Màn hình Laptop nhỏ (Dưới 1200px) */
+@media (max-width: 1200px) {
+    .Section1Map {
+        margin: 80px 40px; /* Giảm margin so với gốc (100px 50px) */
+    }
+
+    .Section1Map h1 {
+        font-size: 2rem; /* Thu nhỏ tiêu đề */
+    }
+
+    .Map iframe {
+        height: 550px; /* Giảm chiều cao map một chút */
+        width: 85%;    /* Tăng độ rộng ra một chút */
+    }
+}
+
+/* 2. Màn hình Tablet (Dưới 992px) */
+@media (max-width: 992px) {
+    .Section1Map {
+        margin: 60px 30px;
+    }
+
+    .Section1Map h1 {
+        font-size: 1.8rem;
+    }
+
+    .Section1Map p {
+        font-size: 15px; /* Giảm size chữ địa chỉ */
+        margin-bottom: 50px; /* Thu gọn khoảng cách dưới địa chỉ */
+    }
+
+    .ButtonTimNgay button {
+        padding: 12px 80px; /* Nút nhỏ lại */
+        font-size: 16px;
+    }
+
+    .Map iframe {
+        height: 450px;
+        width: 90%;
+    }
+}
+
+/* 3. Màn hình Mobile (Dưới 768px) - QUAN TRỌNG */
+@media (max-width: 768px) {
+    .Section1Map {
+        /* Giảm lề tối đa để nội dung không bị ép vào giữa quá nhiều */
+        margin: 40px 15px; 
+        text-align: center; /* Căn giữa nội dung cho đẹp trên mobile */
+    }
+
+    .Section1Map h1 {
+        font-size: 1.5rem; 
+        margin-bottom: 15px;
+    }
+
+    .Section1Map p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    /* Nút bấm gọn lại */
+    .ButtonTimNgay button {
+        padding: 20px 50px;
+        font-size: 14px;
+        width: 100%;       /* Trên mobile nút nên full chiều ngang nếu cần */
+        max-width: 300px;  /* Nhưng không quá to */
+    }
+
+    /* Map full màn hình và thấp lại */
+    .Map {
+        margin-top: 30px;
+    }
+
+    .Map iframe {
+        width: 100%;    /* Full chiều ngang màn hình */
+        height: 350px;  /* Chiều cao vừa phải để người dùng còn vuốt được xuống footer */
+    }
+}
+
+/* 4. Màn hình điện thoại nhỏ (Dưới 480px) */
+@media (max-width: 480px) {
+    .Section1Map {
+        margin: 30px 10px; /* Lề rất nhỏ */
+    }
+
+    .Section1Map h1 {
+        font-size: 1.2rem; /* Tiêu đề nhỏ xinh */
+    }
+
+    .Section1Map p {
+        font-size: 12px;
+    }
+
+    .ButtonTimNgay button {
+        padding: 10px 0; /* Giảm padding ngang */
+        width: 100%;     /* Nút full màn hình */
+        font-size: 13px;
+    }
+
+    .Map iframe {
+        height: 250px; /* Map nhỏ nhất có thể */
+    }
+}
+
