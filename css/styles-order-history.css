@@ -1,0 +1,79 @@
+/* --- FILE: styles-order-history.css --- */
+
+/* 1. Tiêu đề Trang */
+.headerInfo h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #32462F;
+    margin-bottom: 30px;
+    margin-top: 50px; 
+}
+
+/* 2. Style cho từng Card Đơn Hàng */
+.history-card {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.label-text {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+.date-text {
+    font-size: 13px;
+    color: #555;
+    font-weight: 600;
+}
+
+.item-text {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* 3. Nút trạng thái (ĐÃ GIAO) - Đã sửa lỗi bị đè màu đỏ */
+/* Dùng selector dài hơn (.ThongTinCaNhan .btn-status) để ưu tiên cao hơn */
+.ThongTinCaNhan .btn-status {
+    background-color: #32462F !important; /* Màu xanh lá cây chuẩn */
+    color: #fff !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    border: none;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    white-space: nowrap;
+    width: auto; /* Để nút tự co giãn theo chữ */
+    display: inline-block;
+}
+
+
+/* Responsive Mobile */
+@media (max-width: 768px) {
+    .headerInfo h1 {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+    
+    .history-card {
+        padding: 20px;
+    }
+
+    /* Trên mobile nút canh giữa */
+    .ThongTinCaNhan .btn-status {
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+}

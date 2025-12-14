@@ -1,0 +1,182 @@
+/* --- FILE: styles-hoivien.css --- */
+
+/* 1. Tiêu đề trang */
+.headerInfo h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 400; /* Font mỏng hơn chút cho sang */
+    color: #000;
+    margin-bottom: 20px;
+    margin-top: 50px; 
+}
+
+/* 2. Toggle Switch */
+.toggle-switch-container {
+    display: flex;
+    justify-content: center;
+}
+
+.toggle-wrapper {
+    background-color: #dadada; 
+    border-radius: 50px; /* Bo tròn hoàn toàn */
+    display: inline-flex;
+    padding: 0; /* Bỏ padding để nút tràn viền */
+    position: relative;
+    overflow: hidden;
+}
+
+.toggle-option {
+    padding: 12px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.2;
+    transition: 0.3s;
+    margin-bottom: 0;
+    min-width: 150px; /* Đảm bảo độ rộng */
+}
+
+.toggle-option small {
+    font-size: 9px;
+    text-transform: none;
+    color: #00aaff !important; 
+    font-weight: bold;
+}
+
+/* 3. Membership Cards (Hình chữ nhật dài) */
+.mem-card {
+    border-radius: 25px; /* Bo góc mềm mại */
+    padding: 30px 20px;
+    text-align: center;
+    height: 100%;
+    min-height: 420px; /* QUAN TRỌNG: Kéo dài hình chữ nhật ra */
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); /* Bóng nhẹ */
+}
+
+.mem-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Màu thẻ giống ảnh */
+.card-blue {
+    background-color: #aebce6; /* Xanh pastel */
+    color: #333;
+}
+
+.card-gray {
+    background-color: #dcdcdc; /* Xám nhạt */
+    color: #333;
+}
+
+/* --- STATUS TEXT (ĐÃ BỎ BORDER) --- */
+.card-status-text {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    color: #444;
+    font-weight: 600;
+    
+    /* Không có border, không có background box */
+    border: none;
+    background: transparent;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: 400; /* Font tiêu đề thanh mảnh hơn */
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #222;
+    line-height: 1.3;
+    width: 100%;
+}
+
+.card-price {
+    font-size: 14px; 
+    margin-bottom: 30px;
+    color: #444;
+    font-weight: 500;
+}
+
+.card-desc {
+    font-size: 11px; 
+    text-transform: uppercase;
+    color: #555;     
+    line-height: 1.6;
+    margin-top: auto; 
+    max-width: 80%; /* Giới hạn chiều rộng chữ cho đẹp */
+}
+
+/* 4. Nút Huỷ Đăng Ký */
+.btn-cancel {
+    background-color: #32462F; 
+    color: white;
+    font-weight: bold;
+    padding: 12px 40px;
+    border-radius: 4px; /* Nút vuông hơn xíu */
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-cancel:hover {
+    background-color: #263624;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* --- LOGIC CSS KHÔNG CẦN JS --- */
+.monthly-content, .annual-content {
+    display: none;
+    animation: fadeIn 0.5s;
+}
+
+/* Khi chọn Monthly */
+#radio-monthly:checked ~ .row .toggle-wrapper .lbl-monthly {
+    background-color: #aebce6; /* Màu xanh active */
+    color: #222;
+    z-index: 2;
+}
+#radio-monthly:checked ~ .row .nav_right .monthly-content {
+    display: block;
+}
+
+/* Khi chọn Annual */
+#radio-annual:checked ~ .row .toggle-wrapper .lbl-annual {
+    background-color: #aebce6; 
+    color: #222;
+    z-index: 2;
+}
+#radio-annual:checked ~ .row .nav_right .annual-content {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .headerInfo h1 {
+        margin-top: 20px; 
+        font-size: 24px;
+    }
+    .mem-card {
+        margin-bottom: 20px;
+        min-height: auto; /* Trên mobile thì để tự do */
+        padding: 30px 15px;
+    }
+}
