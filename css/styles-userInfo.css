@@ -1,0 +1,150 @@
+/* --- Cấu hình chung --- */
+.ThongTinCaNhan {
+    min-height: 80vh;
+    overflow-x: hidden;
+}
+
+/* --- MENU TRÁI (NAV LEFT) --- */
+.ThongTinCaNhan .nav_left {
+    text-transform: uppercase;
+    background-color: #E4E2DC;
+    min-height: 100vh;
+    padding-top: 50px;
+    z-index: 1050; 
+}
+
+.ThongTinCaNhan .nav_left .info {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.tttk {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #32462F;
+    border-bottom: 2px solid #bd3d44;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.ThongTinCaNhan .nav_left .info p {
+    line-height: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.ThongTinCaNhan .nav_left .info p:hover,
+.ThongTinCaNhan .nav_left .info p.active {
+    color: #BD3D44;
+    padding-left: 10px;
+}
+
+.DangXuat {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.nav_right .detailInfo .boderBox5px{
+    border-radius: 5px;
+    border: 0,5px solid black;
+    
+}
+
+.ThongTinCaNhan button {
+    font-weight: 600;
+    background-color: #BD3D44;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+.ThongTinCaNhan button:hover {
+    background-color: #9F0808;
+}
+
+/* --- NỘI DUNG PHẢI (NAV RIGHT) --- */
+.ThongTinCaNhan .nav_right {
+    background-color: #FDFBF7;
+    padding-bottom: 50px;
+}
+
+.headerInfo h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #32462F;
+    margin-bottom: 20px;
+}
+
+.detailInfo .form-control {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 45px;
+}
+
+.nav_right .buttonFinal {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* --- PHÉP THUẬT CSS (KHÔNG CẦN JS) --- */
+/* Mobile Responsive (Dưới 992px) */
+@media (max-width: 991px) {
+    
+    /* 1. Mặc định ẩn menu sang bên trái */
+    .sidebar-responsive {
+        position: fixed;
+        top: 0;
+        left: -100%; /* Đẩy ra khỏi màn hình */
+        width: 280px; 
+        height: 100vh;
+        box-shadow: 4px 0 15px rgba(0,0,0,0.1);
+        overflow-y: auto;
+        transition: left 0.3s ease; /* Hiệu ứng trượt mượt mà */
+    }
+
+    /* 2. Mặc định ẩn lớp phủ đen */
+    .menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 1040;
+        display: none;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    /* 3. KHI CHECKBOX ĐƯỢC TÍCH (CHECKED) */
+    /* Dòng này nghĩa là: Nếu input được check, thì cái sidebar nằm cùng cấp sẽ hiện ra */
+    .nav-input:checked ~ .row .sidebar-responsive {
+        left: 0; /* Trượt vào màn hình */
+    }
+
+    /* Hiện lớp phủ đen khi check */
+    .nav-input:checked ~ .row .menu-overlay {
+        display: block;
+        opacity: 1;
+    }
+
+    /* Tinh chỉnh giao diện mobile */
+    .ThongTinCaNhan .nav_right {
+        padding-top: 20px;
+    }
+    .headerInfo h1 {
+        font-size: 22px;
+    }
+    .detailInfo {
+        padding: 0 15px; 
+    }
+}

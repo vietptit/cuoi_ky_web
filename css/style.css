@@ -6,7 +6,6 @@
     width: 100%;
 }
 
-
 .header .container-fluid {
     height: 100%;       
     display: flex;
@@ -15,7 +14,6 @@
     position: relative;  
     padding: 0 40px;   
 }
-
 
 .nav-left {
     display: flex;
@@ -36,7 +34,6 @@
     text-decoration: underline;
 }
 
-
 .nav-left {
     display: flex;
     gap: 0;
@@ -44,15 +41,12 @@
     align-items: center;
 }
 
-
 .nav-left .menu-link {
     text-decoration: none;
     color: white;
     font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    
- 
+    font-weight: 600; 
+    text-transform: uppercase; 
     display: flex;
     align-items: center;
     height: 100%; 
@@ -68,8 +62,6 @@
     color: #a8bfa5;
 }
 
-
-
 .dropdown-container {
     height: 100%; 
     display: flex;
@@ -77,30 +69,24 @@
     position: static; 
 }
 
-
 .dropdown-menu-box {
     display: none;     
     position: absolute; 
-    
-    
     top: 100%;
     left: 0;   
     width: 100%;       
     min-height: 250px; 
     background-color: #1e2b1d; 
     padding: 40px 10%; 
-    
     box-shadow: 0 15px 30px rgba(0,0,0,0.3); 
     border-top: 1px solid #4a6345; 
     z-index: 9999;
 }
 
-
 .dropdown-container:hover .dropdown-menu-box {
     display: block;
     animation: fadeIn 0.3s ease-in-out; 
 }
-
 
 /* --- NỘI DUNG BÊN TRONG  --- */
 
@@ -134,18 +120,15 @@
     transform: translateX(5px); 
 }
 
-
 .border-left-custom {
     border-left: 1px solid #364d33;
     padding-left: 40px; 
 }
 
-
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
 
 /* branlogo */
 .brand-logo {
@@ -159,7 +142,6 @@
     width: auto;
     display: block;
 }
-
 
 .nav-right {
     display: flex;
@@ -177,15 +159,12 @@
     transform: scale(1.1); 
 }
 
-
 /* section3 */
 .section3 {
     background-color: #32462F;
-   
     padding: 40px 0; 
     color: white; 
 }
-
 
 .icon_section3 {
     text-align: center;
@@ -193,13 +172,11 @@
 /* end section3 */
 
 /* section4 */
-
 .section4 {
     margin-top: 50px; 
     padding-bottom: 50px;
     background-color: #fffaf5; 
 }
-
 
 .header-box {
     background-color: #32462F; 
@@ -216,11 +193,9 @@
     font-weight: bold;
 }
 
-
 .product-item {
     margin-bottom: 30px; 
 }
-
 
 .image-box {
     position: relative; /* Để đặt chữ Best Seller đè lên */
@@ -235,11 +210,9 @@
     transition: transform 0.5s; 
 }
 
-
 .image-box:hover img {
     transform: scale(1.05);
 }
-
 
 .section4-1 {
     position: absolute;
@@ -253,7 +226,6 @@
     font-weight: bold;
     z-index: 10;
 }
-
 
 .title-price {
     display: flex;
@@ -281,7 +253,6 @@
     height: 40px; 
 }
 
-
 .btn-buy {
     background-color: #bf3f43;
     color: white;
@@ -298,7 +269,6 @@
 .btn-buy:hover {
     background-color: #a32e32; 
 }
-
 
 .button-final-container {
     text-align: center; 
@@ -323,23 +293,18 @@
 }
 /* end section4 */
 
-
 /* section5*/
-
 .section5 {
     background-color: #BD3D44;
     padding: 80px 0; 
-   
     min-height: 600px; 
     display: flex; 
     align-items: center;
 }
 
-
 .section5 .container {
     width: 100%;
 }
-
 
 .section5 .title {
     color: white;
@@ -348,7 +313,6 @@
     margin-bottom: 40px; 
     line-height: 1.4;
 }
-
 
 .listMember {
     list-style: none; /* Bỏ dấu chấm tròn mặc định */
@@ -364,13 +328,11 @@
     margin-bottom: 25px;
 }
 
-
 .listMember li img {
     width: 30px;
     height: 30px;
     margin-right: 15px; 
 }
-
 
 .btn-register {
     background-color: white;
@@ -396,25 +358,7 @@
     box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
 }
 
-/* Chỉ chỉnh sửa cho Mobile nếu cần thiết */
-@media (max-width: 768px) {
-    .section5 {
-        padding: 40px 0; 
-    }
-    
-    .section5 .title {
-        font-size: 20px; 
-    }
-    
-    .listMember li {
-        justify-content: flex-start; 
-    }
-}
-
-/* end section5 */
-
 /* section6 */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -428,13 +372,11 @@
     font-family: sans-serif;
 }
 
-
 .section6 .container {
     width: 100%;
     max-width: 1200px; 
     margin: 0 auto; 
     padding: 0 15px; 
-   
 }
 
 /* ẢNH */
@@ -443,9 +385,7 @@
     height: auto; 
     display: block; 
     object-fit: cover;
-   
 }
-
 
 .section6 .desc {
     margin-top: 15px;
@@ -459,14 +399,11 @@
     letter-spacing: 1px; 
 }
 
-
-
 .section6 .desc ul.pagination {
     display: flex;
     list-style: none;
     gap: 15px;
 }
-
 
 .section6 .button-final-container {
     text-align: center; 
@@ -478,8 +415,6 @@
     height: 40px;     
     opacity: 1;       
     border: none;
-    
-    
     top: 50%;
     transform: translateY(-50%);
 }
@@ -496,11 +431,9 @@
 }
 
 .section6 .btn-see-more:hover {
-
     color: #000000;
     border-color: #333;
 }
-
 
 @media (max-width: 768px) {
     .section6 {
@@ -512,10 +445,20 @@
         padding: 10px 40px; 
         width: 100%;
     }
+    
+    /* Section 5 responsive */
+    .section5 {
+        padding: 40px 0; 
+    }
+    
+    .section5 .title {
+        font-size: 20px; 
+    }
+    
+    .listMember li {
+        justify-content: flex-start; 
+    }
 }
-/* end section6 */
-
-
 
 /* --- SECTION 7: FEEDBACK --- */
 .section7 {
@@ -536,8 +479,6 @@
     font-weight: normal;
 }
 
-
-
 .section7 .carousel-item {
     padding-left: 50px; 
     padding-right: 50px;
@@ -550,12 +491,9 @@
     height: 40px;     
     opacity: 1;       
     border: none;
-    
-    
     top: 50%;
     transform: translateY(-50%);
 }
-
 
 .carousel-control-prev.custom-nav-btn {
     left: 0;
@@ -565,12 +503,10 @@
     right: 0;
 }
 
-
 .custom-nav-btn:hover {
     background-color: #4a6345;
     cursor: pointer;
 }
-
 
 .feedback-card {
     border: none;
@@ -602,7 +538,6 @@
 .card-body-custom .comment {
     font-size: 13px;
     color: #333;
-   
 }
 
 .card-footer-custom {
@@ -610,7 +545,6 @@
     padding-top: 15px;
     display: flex;
     justify-content:space-between;
-    
 }
 
 .card-footer-custom .user-name {
@@ -618,7 +552,6 @@
     color: #333;
     text-transform: uppercase;
     font-size: 11px;
-
 }
 
 .card-footer-custom .role {
@@ -631,7 +564,6 @@
     color: #999;
     font-size: 11px;
 }
-
 
 .section7 .carousel-indicators li {
     background-color: #32462F;
@@ -648,30 +580,6 @@
     opacity: 1;       
 }
 
-@media (max-width: 768px) {
-    
-    .section7 .carousel-inner {
-        padding-left: 35px;
-        padding-right: 35px;
-    }
-
-    
-    .custom-nav-btn {
-        width: 30px;
-        height: 30px;
-        display: flex; 
-        align-items: center;
-        justify-content: center;
-    }
-    
-   
-    .section7 .section-title {
-        font-size: 20px;
-    }
-}
-/* end section7 */
-
-
 /* section8 */
 /* --- SECTION 8: FOOTER --- */
 .section8 {
@@ -682,14 +590,12 @@
     letter-spacing: 0.5px;
 }
 
-
 .section8 .brand-title {
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
 
 .footer-heading {
     font-size: 14px;
@@ -698,7 +604,6 @@
     margin-bottom: 20px;
     color: #e0e0e0;
 }
-
 
 .footer-links {
     list-style: none;
@@ -727,12 +632,10 @@
     margin-left: 3px;
 }
 
-
 .small-text {
     font-size: 11px;
     line-height: 1.5;
 }
-
 
 .subscribe-form {
     position: relative;
@@ -754,7 +657,6 @@
     border-bottom: 1px solid white;
 }
 
-
 .social-icons a {
     margin-right: 15px;
     display: inline-block;
@@ -771,7 +673,6 @@
     height: 18px;
 }
 
-
 .footer-bottom {
     margin-top: 50px;
     padding: 20px 0;
@@ -784,7 +685,6 @@
     line-height: 1.6;
 }
 
-
 @media (max-width: 768px) {
     .section8 {
         padding-top: 40px;
@@ -796,13 +696,10 @@
         margin-top: 20px;
     }
 }
-/* end section8 */
 
+/* --- RESPONSIVE FINAL --- */
 
-/* respon final -header */
-/* --- RESPONSIVE HEADER --- */
-
-
+/* 1. Màn hình Laptop nhỏ */
 @media (max-width: 1200px) {
     .header .container-fluid {
         padding: 0 20px; 
@@ -816,7 +713,7 @@
     }
 }
 
-
+/* 2. Màn hình Tablet */
 @media (max-width: 992px) {
     .nav-left .menu-link, .nav-left a {
         font-size: 11px; 
@@ -830,19 +727,17 @@
     }
 }
 
-
-
+/* 3. Màn hình Mobile - TỔNG HỢP */
 @media (max-width: 768px) {
+    
+    /* === HEADER MOBILE === */
     .header {
         height: auto; 
         padding: 10px 0;
     }
-
     .header .container-fluid {
         flex-wrap: wrap; 
     }
-
-
     .brand-logo {
         position: static; 
         transform: none;
@@ -852,8 +747,6 @@
         margin-bottom: 10px;
         order: 1; 
     }
-
-
     .nav-right {
         position: absolute;
         top: 5px;
@@ -861,50 +754,138 @@
         gap: 15px;
     }
     .icon-item img {
-        height: 10px; 
+        height: 18px; 
     }
-
-
     .nav-left {
         order: 2; 
         width: 100%;
-        
-        
         display: flex;
         overflow-x: auto; 
         white-space: nowrap; 
         justify-content: flex-start; 
         padding-bottom: 5px; 
-        
-        
         -ms-overflow-style: none;  
         scrollbar-width: none; 
     }
     .nav-left::-webkit-scrollbar {
         display: none; 
     }
-
     .nav-left .menu-link, .nav-left a {
-        font-size: 13px;
-        padding: 10px 15px; 
+        font-size: 11px;
+        padding: 8px 12px;
         flex-shrink: 0;
         color: #fff;
         background-color: rgba(255,255,255,0.1); 
         border-radius: 20px; 
-        margin-right: 10px; 
+        margin-right: 8px;
     }
-    
-    
     .dropdown-menu-box {
         display: none !important; 
-       
+    }
+
+    /* === MỞ RỘNG BIÊN ĐỂ CHỮ KHÔNG BỊ ÉP === */
+    .section4 .col-6 {
+        padding-left: 2px !important; 
+        padding-right: 2px !important;
+    }
+
+    /* === SECTION 4: SẢN PHẨM (2 CỘT) === */
+    .section4 .image-box img {
+        height: 175px !important; 
+        object-fit: cover !important;
+    }
+    .section4 .name {
+        font-size: 14px !important; 
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;    
+        margin-bottom: 2px !important;
+    }
+    .section4 .price {
+        font-size: 15px !important; 
+        color: #BD3D44;
+        display: block;            
+        font-weight: 700 !important;
+    }
+    .section4 .desc {
+        font-size: 11px !important;
+        height: 32px; 
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        margin-bottom: 8px;
+    }
+    .section4 .btn-buy {
+        font-size: 11px !important;
+        padding: 8px 0 !important;
+        height: auto;
+    }
+    .section4-1 {
+        font-size: 9px !important;
+        padding: 4px 6px !important;
+    }
+
+    /* === SECTION 7: FEEDBACK (1 CỘT - FULL WIDTH) === */
+    .section7 .carousel-inner {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .custom-nav-btn {
+        width: 25px;
+        height: 25px;
+    }
+    .section7 .section-title {
+        font-size: 20px;
+    }
+
+    /* Style lại Feedback khi ở dạng 1 cột */
+    .card-body-custom img {
+        width: 80px !important; 
+        height: 80px !important;
+        margin-right: 15px !important; 
+        object-fit: cover;
+    }
+
+    .feedback-card .product-name {
+        font-size: 14px !important; 
+        margin-bottom: 5px;
+    }
+
+    /* Chữ hiển thị thoải mái */
+    .card-body-custom .comment {
+        font-size: 13px !important; 
+        line-height: 1.5 !important; 
+        margin-bottom: 5px;
+        height: auto !important; 
+    }
+
+    .card-footer-custom {
+        padding-top: 10px !important;
+        flex-direction: row !important;      
+        align-items: center;
+    }
+
+    .card-footer-custom .user-name {
+        font-size: 12px !important;
+        margin-right: 5px;
+        margin-bottom: 0;
+    }
+
+    .card-footer-custom .role, 
+    .card-footer-custom .date {
+        font-size: 11px !important;
+        margin-left: 0 !important;   
     }
 }
 
-
+/* 4. Màn hình rất nhỏ */
 @media (max-width: 480px) {
     .header .container-fluid {
-        padding: 0 15px;
+        padding: 0 10px;
+    }
+    .nav-left .menu-link, .nav-left a {
+        font-size: 10px;      
+        padding: 6px 10px;    
     }
 }
-/* end respon */

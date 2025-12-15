@@ -1,0 +1,67 @@
+/* --- FILE: styles-address.css --- */
+
+/* 1. Tiêu đề ĐỊA CHỈ */
+.headerInfo h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #32462F;
+    margin-bottom: 30px;
+    margin-top: 50px; 
+}
+
+/* 2. CHỮ BÊN MENU TRÁI (QUAN TRỌNG: MÀU ĐỎ) */
+/* Dòng này ép buộc chữ 'địa chỉ' bên sidebar phải màu đỏ */
+.ThongTinCaNhan .nav_left .info p.active {
+    color: #BD3D44 !important; /* Màu đỏ */
+    font-weight: bold;
+    padding-left: 10px; /* Thụt vào 1 chút cho đẹp */
+}
+
+/* 3. Ô nhập liệu (Input) */
+.custom-input {
+    background-color: #fff;
+    border: 1px solid #999; 
+    border-radius: 5px;     
+    height: 50px;           
+    font-size: 16px;
+    color: #333;
+}
+
+.custom-input:focus {
+    box-shadow: none;
+    border-color: #32462F; 
+}
+
+/* 4. Nút Thêm Địa Chỉ (QUAN TRỌNG: MÀU XANH) */
+/* Dùng !important để không bị file css cũ đè thành màu đỏ */
+.ThongTinCaNhan .btn-add-addr {
+    background-color: #32462F !important; /* Màu xanh rêu đậm chuẩn */
+    color: white !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 40px;
+    border-radius: 4px;
+    border: none;
+    transition: 0.3s;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.ThongTinCaNhan .btn-add-addr:hover {
+    background-color: #263624 !important; /* Đậm hơn khi di chuột */
+    color: #fff !important;
+    transform: scale(1.02);
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+    .headerInfo h1 {
+        margin-top: 20px; 
+        font-size: 24px;
+    }
+    
+    .ThongTinCaNhan .btn-add-addr {
+        width: 100%; /* Nút full chiều ngang trên điện thoại */
+    }
+}

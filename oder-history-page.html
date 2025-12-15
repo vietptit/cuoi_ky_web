@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/styles-userInfo.css">
+    <link rel="stylesheet" href="css/styles-order-history.css">
+    
+    <title>Lịch Sử Mua Hàng</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container-fluid">
+            
+            <nav class="nav-left">
+    
+                <div class="dropdown-container">
+                    <a href="#" class="menu-link">GIẢM GIÁ 15%</a>
+                    
+                    <div class="dropdown-menu-box">
+                        <div class="row">
+                            <div class="col-4 dropdown-col">
+                                <h6 class="dropdown-header">Giảm giá 15% Cà phê</h6>
+                                <ul class="dropdown-list">
+                                    <li>Giảm 15% cho mọi món cà phê đá</li>
+                                    <li>Giảm 15% cho cà phê sữa truyền thống</li>
+                                    <li>Giảm 15% cho hóa đơn cà phê từ 2 ly trở lên</li>
+                                    <li>Giảm 15% cho khách mang ly cá nhân</li>
+                                </ul>
+                            </div>
+
+                            <div class="col-4 dropdown-col border-left-custom">
+                                <h6 class="dropdown-header">Quà tặng</h6>
+                                <ul class="dropdown-list">
+                                    <li>Tặng topping free (kem sữa / trân châu)</li>
+                                    <li>Tặng voucher giảm 10% cho lần ghé tiếp theo</li>
+                                    <li>Tặng ống hút inox cho khách hàng mới</li>
+                                </ul>
+                            </div>
+
+                            <div class="col-4 dropdown-col border-left-custom">
+                                <h6 class="dropdown-header">Giảm giá Gói hội viên</h6>
+                                <ul class="dropdown-list">
+                                    <li>GÓI KHÁM PHÁ – Giảm 20% mọi thức uống</li>
+                                    <li>GÓI SÁNG TỈNH TÁO – Giảm còn 10%</li>
+                                    <li>GÓI CUỐI TUẦN – Giảm giá không áp dụng chung combo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="product-list.html" class="menu-link">BEST SELLER</a>
+                <a href="adress-page.html" class="menu-link">HỘI VIÊN</a>
+                <a href="#" class="menu-link">ĐỊA ĐIỂM</a>
+            </nav>
+        
+
+            <div class="brand-logo">
+                <a href="indenx-1.html">
+                    <img src="image/Link - Go to Blue Bottle home page.png" alt="Blue Bottle Logo">
+                </a>
+            </div>
+
+            <div class="nav-right">
+                <a href="#" class="icon-item">
+                    <img src="image/iconTimKiem.png" alt="Search">
+                </a>
+                <a href="#" class="icon-item">
+                    <img src="image/iconUser.png" alt="User"> 
+                </a>
+                <a href="#" class="icon-item">
+                    <img src="image/iconCart.png" alt="Cart">
+                </a>
+            </div>
+            
+        </div>
+    </header>
+
+    <section class="ThongTinCaNhan">
+        <div class="container-fluid">
+            
+            <input type="checkbox" id="nav-mobile-input" class="nav-input" hidden>
+
+            <div class="row">
+                
+                <div class="col-12 d-lg-none py-3 px-3 bg-light border-bottom">
+                    <label for="nav-mobile-input" class="btn btn-dark font-weight-bold m-0">
+                        ☰ DANH MỤC
+                    </label>
+                </div>
+
+                <div class="col-lg-3 nav_left sidebar-responsive">
+                    <label for="nav-mobile-input" class="close-btn d-lg-none text-right p-3 d-block">
+                        <span style="font-size: 30px; cursor: pointer;">&times;</span>
+                    </label>
+
+                    <div class="info">
+                        <p class="tttk text-uppercase">thông tin tài khoản</p>
+                        <p onclick="window.location.href='userinfo-page.html'">thông tin cá nhân</p>
+                        <p onclick="window.location.href='hoivien-page.html'">gói hội viên</p>
+                        <p class="active"><b>lịch sử mua hàng</b></p>
+                        <p onclick="window.location.href='#'">địa chỉ</p>
+                    </div>
+                   
+                    <div class="DangXuat">
+                        <button class="btn px-5">Đăng xuất</button>
+                    </div>
+                </div>
+
+                <label for="nav-mobile-input" class="menu-overlay"></label>
+
+                <div class="col-lg-9 col-12 nav_right">
+                    
+                    <div class="headerInfo text-center py-4">
+                        <h1>LỊCH SỬ MUA HÀNG</h1>
+                    </div>
+
+                    <div class="order-content px-md-5 px-3 pb-5">
+                        
+                        <div class="history-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-8 col-12">
+                                    <div class="info-group">
+                                        <div class="label-text">THỜI GIAN ĐẶT HÀNG:</div>
+                                        <div class="label-text">CHI TIẾT ĐƠN HÀNG</div>
+                                    </div>
+                                    <div class="data-group mt-3">
+                                        <div class="date-text mb-2">20/11/2025</div>
+                                        <div class="item-text">1 COFFEE ĐEN ĐÁ</div>
+                                        <div class="item-text">20% ĐÁ</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 text-md-right text-left mt-3 mt-md-0">
+                                    <button class="btn-status">ĐÃ GIAO</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="history-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-8 col-12">
+                                    <div class="info-group">
+                                        <div class="label-text">THỜI GIAN ĐẶT HÀNG:</div>
+                                        <div class="label-text">CHI TIẾT ĐƠN HÀNG</div>
+                                    </div>
+                                    <div class="data-group mt-3">
+                                        <div class="date-text mb-2">15/11/2025</div>
+                                        <div class="row">
+                                            <div class="col-6 item-text">1 COFFEE ĐEN</div>
+                                            <div class="col-6 item-text">1 COFFEE SỮA</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 text-md-right text-left mt-3 mt-md-0">
+                                    <button class="btn-status">ĐÃ GIAO</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="history-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-8 col-12">
+                                    <div class="info-group">
+                                        <div class="label-text">THỜI GIAN ĐẶT HÀNG:</div>
+                                        <div class="label-text">CHI TIẾT ĐƠN HÀNG</div>
+                                    </div>
+                                    <div class="data-group mt-3">
+                                        <div class="date-text mb-2">20/11/2025</div>
+                                        <div class="item-text">1 SMOOTHIES DÂU</div>
+                                        <div class="item-text">70% ĐÁ</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 text-md-right text-left mt-3 mt-md-0">
+                                    <button class="btn-status">ĐÃ GIAO</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section8">
+        <div class="container"> 
+            <div class="brand-title mb-5">MAI COFFEE</div>
+            <div class="row">
+                <div class="col-lg-7 col-md-12 descInFor mb-4">
+                    <div class="row">
+                        <div class="col-4"><h5 class="footer-heading">CÔNG TY</h5><ul class="footer-links"><li><a href="#">Địa chỉ</a></li><li><a href="#">Lịch sử</a></li></ul></div>
+                        <div class="col-4"><h5 class="footer-heading">VỀ CHÚNG TÔI</h5><ul class="footer-links"><li><a href="#">Đối tác</a></li><li><a href="#">Cam kết</a></li></ul></div>
+                        <div class="col-4"><h5 class="footer-heading">TÌM HIỂU THÊM</h5><ul class="footer-links"><li><a href="#">Liên hệ</a></li><li><a href="#">Quà tặng</a></li></ul></div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 subcribe">
+                    <h5 class="footer-heading">ĐĂNG KÝ VÀ BẬT THÔNG BÁO</h5>
+                    <p class="small-text text-muted mb-3">Đăng ký email để nhận voucher...</p>
+                    <div class="social-icons">
+                       <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-f.png" alt="fb"></a>
+                       <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="tw"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 text-center"><p class="mb-0">© 2025 NESTLÉ</p></div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
