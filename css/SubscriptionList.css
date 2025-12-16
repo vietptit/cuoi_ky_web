@@ -1,0 +1,150 @@
+/* --- SUBSCRIPTION LIST STYLES --- */
+:root {
+    --sub-red: #c13939;
+    --sub-cream: #fdfcf8;
+    --sub-text-dark: #333;
+    --sub-text-white: #fff;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--sub-cream);
+    font-family: var(--font-body);
+}
+
+.sub-list-section {
+    width: 100%;
+}
+
+.sub-row {
+    display: flex;
+    align-items: center;
+    min-height: 500px;
+}
+
+.sub-row .col-image,
+.sub-row .col-text {
+    flex: 1;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Image styles */
+.col-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text styles */
+.col-text {
+    padding: 60px 80px;
+}
+
+.sub-title {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.sub-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+    max-width: 400px;
+}
+
+/* Button styles */
+.btn-sub-action {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+}
+
+/* --- THEMES --- */
+/* Theme Light (Cream bg, Dark text, Red button) */
+.sub-theme-light {
+    background-color: var(--sub-cream);
+    color: var(--sub-text-dark);
+}
+
+.sub-theme-light .btn-sub-action {
+    background-color: var(--sub-red);
+    color: #fff;
+}
+
+.sub-theme-light .btn-sub-action:hover {
+    background-color: #a32e2e;
+}
+
+/* Theme Red (Red bg, White text, White button) */
+.sub-theme-red {
+    background-color: var(--sub-red);
+    color: var(--sub-text-white);
+}
+
+.sub-theme-red .btn-sub-action {
+    background-color: #fff;
+    color: var(--sub-red);
+}
+
+.sub-theme-red .btn-sub-action:hover {
+    background-color: #f0f0f0;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 992px) {
+    .sub-row .col-text {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sub-row {
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* Force image to top on mobile for consistent "Card" look, 
+       OR keep zigzag by using order property. 
+       Let's keep zigzag order if possible, or stack image top.
+       Standard UX is Image Top. */
+
+    .sub-row.reverse-mobile {
+        flex-direction: column-reverse;
+        /* Ensure text is below image if needed, or handle standard stack */
+    }
+
+    .col-image,
+    .col-text {
+        width: 100%;
+        height: auto;
+        /* Allow auto height */
+        flex: none;
+    }
+
+    .col-image {
+        height: 300px;
+        /* Fixed height for image area on mobile */
+    }
+
+    .col-text {
+        padding: 40px 20px;
+        align-items: center;
+        text-align: center;
+    }
+}
