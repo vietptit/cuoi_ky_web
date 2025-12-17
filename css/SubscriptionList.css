@@ -15,6 +15,13 @@ body {
 
 .sub-list-section {
     width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.sub-row {
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .sub-row {

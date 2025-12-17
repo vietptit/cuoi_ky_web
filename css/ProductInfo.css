@@ -349,7 +349,23 @@ body {
 }
 
 /* --- RESPONSIVE --- */
+
 @media (max-width: 991px) {
+
+
+    .product-title,
+    .product-subtitle,
+    .product-description,
+    .price-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-page-main {
+        padding: 60px 0;
+    }
+
     .product-info-wrapper {
         padding-left: 0;
         margin-top: 40px;
@@ -358,17 +374,59 @@ body {
     .product-title {
         font-size: 32px;
     }
+
+    .size-btn {
+        width: 45px;
+        height: 45px;
+    }
 }
 
 @media (max-width: 768px) {
+
+
+    .product-title,
+    .product-subtitle,
+    .product-description,
+    .price-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-page-main {
+        padding: 40px 0;
+    }
+
+    .product-detail-row {
+        margin-bottom: 50px;
+    }
+
+    .reviews-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    .reviews-header h2 {
+        font-size: 26px;
+    }
+
     .review-item {
         grid-template-columns: 1fr;
         gap: 10px;
     }
 
+    .review-meta {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .rating {
         grid-column: 1;
         grid-row: 2;
+        margin-bottom: 15px;
     }
 
     .review-content {
@@ -380,8 +438,53 @@ body {
         flex-direction: column;
     }
 
+    .quantity-control {
+        width: 100%;
+        height: 50px;
+    }
+
+    .quantity-input {
+        width: 100%;
+        flex-grow: 1;
+    }
+
     .add-to-cart-btn {
         width: 100%;
         padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .product-title,
+    .product-subtitle,
+    .product-description,
+    .price-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-title {
+        font-size: 26px;
+    }
+
+    .price-section {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .purchase-options {
+        padding: 20px;
+    }
+
+    .size-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .review-list {
+        margin-bottom: 30px;
     }
 }
